@@ -11,6 +11,6 @@ body {
 #cat {
 	width: 272px;
 	height: 168px;
-	background-image: url(../res/meow.png);
+	background-image: url(../res/cat.gif);
 	transform: scaleX(0.5) scaleY(0.5);
 }

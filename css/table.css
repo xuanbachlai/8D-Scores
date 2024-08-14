@@ -6,7 +6,7 @@ table {
 
 th {
     background-color: #7482b1;
-    background-image: linear-gradient(to right, rgb(0, 110, 255) , rgb(120, 164, 198));
+    background-image: linear-gradient(to right, rgb(0, 110, 255), rgb(120, 164, 198));
 }
 
 td {
@@ -17,7 +17,7 @@ td:hover {
     background-color: #d1d1d1;
 }
 
-#add-score0 {
+button[id^="add"] {
     width: 25px;
     height: 25px;
     margin: 5px;
@@ -26,8 +26,25 @@ td:hover {
     border: 0;
     border-radius: 30%;
     opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
-td:hover #add-score0{
+td:hover button[id^="add"] {
+    opacity: 1;
+}
+
+button[id^="subtract"] {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    font-size: 20px;
+    background-color: aqua;
+    border: 0;
+    border-radius: 30%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+td:hover button[id^="subtract"] {
     opacity: 1;
 }
