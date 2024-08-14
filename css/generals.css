@@ -1,0 +1,16 @@
+* {
+	font-family: 'jetbrains mono';
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: rgb(36, 41, 63);
+}
+
+#cat {
+	width: 272px;
+	height: 168px;
+	background-image: url(../res/cat.gif);
+	transform: scaleX(0.5) scaleY(0.5);
+}

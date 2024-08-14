@@ -1,0 +1,14 @@
+table {
+    width: 100%;
+    border: 1px solid;
+    text-align: center;
+}
+
+th {
+    background-color: #7482b1;
+    background-image: linear-gradient(to right, rgb(0, 110, 255) , rgb(120, 164, 198));
+}
+
+td {
+    background-color: #f7f7f7;
+}
