@@ -12,3 +12,22 @@ th {
 td {
     background-color: #f7f7f7;
 }
+
+td:hover {
+    background-color: #d1d1d1;
+}
+
+#add-score0 {
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    font-size: 20px;
+    background-color: aqua;
+    border: 0;
+    border-radius: 30%;
+    opacity: 0;
+}
+
+td:hover #add-score0{
+    opacity: 1;
+}
