@@ -71,7 +71,7 @@ input:checked+.slider:before {
     display: block;
 }
 
-@media (max-width: 414px){
+@media (max-width: 548px){
 	.rank-board {
         position: relative;
         width: 100%;
