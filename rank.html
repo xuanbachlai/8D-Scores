@@ -11,15 +11,34 @@
 <body>
 
     <div class="rank-board">
-        <div id="rank-image" class="ViewPage2"></div>
-        <p id="ViewPage2-Top1" class="ViewPage2">TOP 1: Trúc</p>
-        <p id="ViewPage2-Top2" class="ViewPage2">TOP 2: Mèo</p>
-        <p id="ViewPage2-Top3" class="ViewPage2">TOP 3: Mew</p>
-        <label class="switch">
-            <input type="checkbox">
-            <span class="slider"></span>
-        </label>
+        <div class="ViewPage2">
+            <div id="rank-image"></div>
+            <p id="page2-Top1">TOP 1: Trúc</p>
+            <p id="page2-Top2">TOP 2: Mèo</p>
+            <p id="page2-Top3">TOP 3: Mew</p>
+        </div>
+        <div class="ViewPage1">
+            <table id="table">
+                <tr>
+                    <td>Trúc</td>
+                    <td id="page1-score">0</td>
+                </tr>
+                <tr>
+                    <td>Meow</td>
+                    <td id="page1-score">0</td>
+                </tr>
+                <tr>
+                    <td>Mều chân ngắn</td>
+                    <td id="page1-score">0</td>
+                </tr>
+            </table>
+        </div>
     </div>
+
+    <label class="switch">
+        <input type="checkbox" id="toggle-switch">
+        <span class="slider"></span>
+    </label>
 
 </body>
 
