@@ -1,665 +1,649 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>8D - Scorage</title>
-    <link rel="stylesheet" href="css/generals.css">
-    <link rel="stylesheet" href="css/table.css">
-    <link rel="icon" href="res/meow.png">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>8D - Tích điểm🎁</title>
+	<link rel="stylesheet" href="css/generals.css">
+	<link rel="stylesheet" href="css/table.css">
+	<link rel="icon" href="res/meow.png">
 </head>
 <body>
 
-    <table>
-        <tr>
-            <th>STT</th>
-            <th>Tên</th>
-            <th>Điểm tốt</th>
-            <th>Giải thưởng</th>
-            <th>Sao</th>
-        </tr>
-        <!-- Thay 8D bằng số thứ tự từ 1 đến 40 -->
-        <!-- Row 1 -->
-        <tr>
-            <td>1</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score0">-</button>
-                <span id="score0">0</span>
-                <button id="add-score0">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward0">-</button>
-                <span id="reward0">0</span>
-                <button id="add-reward0">+</button>
-            </td>
-            <td id="star0">0</td>
-        </tr>
-        <!-- Row 2 -->
-        <tr>
-            <td>2</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score1">-</button>
-                <span id="score1">0</span>
-                <button id="add-score1">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward1">-</button>
-                <span id="reward1">0</span>
-                <button id="add-reward1">+</button>
-            </td>
-            <td id="star1">0</td>
-        </tr>
-        <!-- Row 3 -->
-        <tr>
-            <td>3</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score2">-</button>
-                <span id="score2">0</span>
-                <button id="add-score2">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward2">-</button>
-                <span id="reward2">0</span>
-                <button id="add-reward2">+</button>
-            </td>
-            <td id="star2">0</td>
-        </tr>
-        <!-- Row 4 -->
-        <tr>
-            <td>4</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score3">-</button>
-                <span id="score3">0</span>
-                <button id="add-score3">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward3">-</button>
-                <span id="reward3">0</span>
-                <button id="add-reward3">+</button>
-            </td>
-            <td id="star3">0</td>
-        </tr>
-        <!-- Row 5 -->
-        <tr>
-            <td>5</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score4">-</button>
-                <span id="score4">0</span>
-                <button id="add-score4">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward4">-</button>
-                <span id="reward4">0</span>
-                <button id="add-reward4">+</button>
-            </td>
-            <td id="star4">0</td>
-        </tr>
-        <!-- Row 6 -->
-        <tr>
-            <td>6</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score5">-</button>
-                <span id="score5">0</span>
-                <button id="add-score5">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward5">-</button>
-                <span id="reward5">0</span>
-                <button id="add-reward5">+</button>
-            </td>
-            <td id="star5">0</td>
-        </tr>
-        <!-- Row 7 -->
-        <tr>
-            <td>7</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score6">-</button>
-                <span id="score6">0</span>
-                <button id="add-score6">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward6">-</button>
-                <span id="reward6">0</span>
-                <button id="add-reward6">+</button>
-            </td>
-            <td id="star6">0</td>
-        </tr>
-        <!-- Row 8 -->
-        <tr>
-            <td>8</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score7">-</button>
-                <span id="score7">0</span>
-                <button id="add-score7">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward7">-</button>
-                <span id="reward7">0</span>
-                <button id="add-reward7">+</button>
-            </td>
-            <td id="star7">0</td>
-        </tr>
-        <!-- Row 9 -->
-        <tr>
-            <td>9</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score8">-</button>
-                <span id="score8">0</span>
-                <button id="add-score8">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward8">-</button>
-                <span id="reward8">0</span>
-                <button id="add-reward8">+</button>
-            </td>
-            <td id="star8">0</td>
-        </tr>
-        <!-- Row 10 -->
-        <tr>
-            <td>10</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score9">-</button>
-                <span id="score9">0</span>
-                <button id="add-score9">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward9">-</button>
-                <span id="reward9">0</span>
-                <button id="add-reward9">+</button>
-            </td>
-            <td id="star9">0</td>
-        </tr>
-        <!-- Row 11 -->
-        <tr>
-            <td>11</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score10">-</button>
-                <span id="score10">0</span>
-                <button id="add-score10">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward10">-</button>
-                <span id="reward10">0</span>
-                <button id="add-reward10">+</button>
-            </td>
-            <td id="star10">0</td>
-        </tr>
-        <!-- Row 12 -->
-        <tr>
-            <td>12</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score11">-</button>
-                <span id="score11">0</span>
-                <button id="add-score11">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward11">-</button>
-                <span id="reward11">0</span>
-                <button id="add-reward11">+</button>
-            </td>
-            <td id="star11">0</td>
-        </tr>
-        <!-- Row 13 -->
-        <tr>
-            <td>13</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score12">-</button>
-                <span id="score12">0</span>
-                <button id="add-score12">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward12">-</button>
-                <span id="reward12">0</span>
-                <button id="add-reward12">+</button>
-            </td>
-            <td id="star12">0</td>
-        </tr>
-        <!-- Row 14 -->
-        <tr>
-            <td>14</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score13">-</button>
-                <span id="score13">0</span>
-                <button id="add-score13">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward13">-</button>
-                <span id="reward13">0</span>
-                <button id="add-reward13">+</button>
-            </td>
-            <td id="star13">0</td>
-        </tr>
-        <!-- Row 15 -->
-        <tr>
-            <td>15</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score14">-</button>
-                <span id="score14">0</span>
-                <button id="add-score14">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward14">-</button>
-                <span id="reward14">0</span>
-                <button id="add-reward14">+</button>
-            </td>
-            <td id="star14">0</td>
-        </tr>
-        <!-- Row 16 -->
-        <tr>
-            <td>16</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score15">-</button>
-                <span id="score15">0</span>
-                <button id="add-score15">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward15">-</button>
-                <span id="reward15">0</span>
-                <button id="add-reward15">+</button>
-            </td>
-            <td id="star15">0</td>
-        </tr>
-        <!-- Row 17 -->
-        <tr>
-            <td>17</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score16">-</button>
-                <span id="score16">0</span>
-                <button id="add-score16">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward16">-</button>
-                <span id="reward16">0</span>
-                <button id="add-reward16">+</button>
-            </td>
-            <td id="star16">0</td>
-        </tr>
-        <!-- Row 18 -->
-        <tr>
-            <td>18</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score17">-</button>
-                <span id="score17">0</span>
-                <button id="add-score17">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward17">-</button>
-                <span id="reward17">0</span>
-                <button id="add-reward17">+</button>
-            </td>
-            <td id="star17">0</td>
-        </tr>
-        <!-- Row 19 -->
-        <tr>
-            <td>19</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score18">-</button>
-                <span id="score18">0</span>
-                <button id="add-score18">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward18">-</button>
-                <span id="reward18">0</span>
-                <button id="add-reward18">+</button>
-            </td>
-            <td id="star18">0</td>
-        </tr>
-        <!-- Row 20 -->
-        <tr>
-            <td>20</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score19">-</button>
-                <span id="score19">0</span>
-                <button id="add-score19">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward19">-</button>
-                <span id="reward19">0</span>
-                <button id="add-reward19">+</button>
-            </td>
-            <td id="star19">0</td>
-        </tr>
-        <!-- Row 21 -->
-        <tr>
-            <td>21</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score20">-</button>
-                <span id="score20">0</span>
-                <button id="add-score20">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward20">-</button>
-                <span id="reward20">0</span>
-                <button id="add-reward20">+</button>
-            </td>
-            <td id="star20">0</td>
-        </tr>
-        <!-- Row 22 -->
-        <tr>
-            <td>22</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score21">-</button>
-                <span id="score21">0</span>
-                <button id="add-score21">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward21">-</button>
-                <span id="reward21">0</span>
-                <button id="add-reward21">+</button>
-            </td>
-            <td id="star21">0</td>
-        </tr>
-        <!-- Row 23 -->
-        <tr>
-            <td>23</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score22">-</button>
-                <span id="score22">0</span>
-                <button id="add-score22">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward22">-</button>
-                <span id="reward22">0</span>
-                <button id="add-reward22">+</button>
-            </td>
-            <td id="star22">0</td>
-        </tr>
-        <!-- Row 24 -->
-        <tr>
-            <td>24</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score23">-</button>
-                <span id="score23">0</span>
-                <button id="add-score23">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward23">-</button>
-                <span id="reward23">0</span>
-                <button id="add-reward23">+</button>
-            </td>
-            <td id="star23">0</td>
-        </tr>
-        <!-- Row 25 -->
-        <tr>
-            <td>25</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score24">-</button>
-                <span id="score24">0</span>
-                <button id="add-score24">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward24">-</button>
-                <span id="reward24">0</span>
-                <button id="add-reward24">+</button>
-            </td>
-            <td id="star24">0</td>
-        </tr>
-        <!-- Row 26 -->
-        <tr>
-            <td>26</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score25">-</button>
-                <span id="score25">0</span>
-                <button id="add-score25">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward25">-</button>
-                <span id="reward25">0</span>
-                <button id="add-reward25">+</button>
-            </td>
-            <td id="star25">0</td>
-        </tr>
-        <!-- Row 27 -->
-        <tr>
-            <td>27</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score26">-</button>
-                <span id="score26">0</span>
-                <button id="add-score26">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward26">-</button>
-                <span id="reward26">0</span>
-                <button id="add-reward26">+</button>
-            </td>
-            <td id="star26">0</td>
-        </tr>
-        <!-- Row 28 -->
-        <tr>
-            <td>28</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score27">-</button>
-                <span id="score27">0</span>
-                <button id="add-score27">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward27">-</button>
-                <span id="reward27">0</span>
-                <button id="add-reward27">+</button>
-            </td>
-            <td id="star27">0</td>
-        </tr>
-        <!-- Row 29 -->
-        <tr>
-            <td>29</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score28">-</button>
-                <span id="score28">0</span>
-                <button id="add-score28">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward28">-</button>
-                <span id="reward28">0</span>
-                <button id="add-reward28">+</button>
-            </td>
-            <td id="star28">0</td>
-        </tr>
-        <!-- Row 30 -->
-        <tr>
-            <td>30</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score29">-</button>
-                <span id="score29">0</span>
-                <button id="add-score29">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward29">-</button>
-                <span id="reward29">0</span>
-                <button id="add-reward29">+</button>
-            </td>
-            <td id="star29">0</td>
-        </tr>
-        <!-- Row 31 -->
-        <tr>
-            <td>31</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score30">-</button>
-                <span id="score30">0</span>
-                <button id="add-score30">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward30">-</button>
-                <span id="reward30">0</span>
-                <button id="add-reward30">+</button>
-            </td>
-            <td id="star30">0</td>
-        </tr>
-        <!-- Row 32 -->
-        <tr>
-            <td>32</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score31">-</button>
-                <span id="score31">0</span>
-                <button id="add-score31">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward31">-</button>
-                <span id="reward31">0</span>
-                <button id="add-reward31">+</button>
-            </td>
-            <td id="star31">0</td>
-        </tr>
-        <!-- Row 33 -->
-        <tr>
-            <td>33</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score32">-</button>
-                <span id="score32">0</span>
-                <button id="add-score32">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward32">-</button>
-                <span id="reward32">0</span>
-                <button id="add-reward32">+</button>
-            </td>
-            <td id="star32">0</td>
-        </tr>
-        <!-- Row 34 -->
-        <tr>
-            <td>34</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score33">-</button>
-                <span id="score33">0</span>
-                <button id="add-score33">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward33">-</button>
-                <span id="reward33">0</span>
-                <button id="add-reward33">+</button>
-            </td>
-            <td id="star33">0</td>
-        </tr>
-        <!-- Row 35 -->
-        <tr>
-            <td>35</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score34">-</button>
-                <span id="score34">0</span>
-                <button id="add-score34">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward34">-</button>
-                <span id="reward34">0</span>
-                <button id="add-reward34">+</button>
-            </td>
-            <td id="star34">0</td>
-        </tr>
-        <!-- Row 36 -->
-        <tr>
-            <td>36</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score35">-</button>
-                <span id="score35">0</span>
-                <button id="add-score35">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward35">-</button>
-                <span id="reward35">0</span>
-                <button id="add-reward35">+</button>
-            </td>
-            <td id="star35">0</td>
-        </tr>
-        <!-- Row 37 -->
-        <tr>
-            <td>37</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score36">-</button>
-                <span id="score36">0</span>
-                <button id="add-score36">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward36">-</button>
-                <span id="reward36">0</span>
-                <button id="add-reward36">+</button>
-            </td>
-            <td id="star36">0</td>
-        </tr>
-        <!-- Row 38 -->
-        <tr>
-            <td>38</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score37">-</button>
-                <span id="score37">0</span>
-                <button id="add-score37">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward37">-</button>
-                <span id="reward37">0</span>
-                <button id="add-reward37">+</button>
-            </td>
-            <td id="star37">0</td>
-        </tr>
-        <!-- Row 39 -->
-        <tr>
-            <td>39</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score38">-</button>
-                <span id="score38">0</span>
-                <button id="add-score38">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward38">-</button>
-                <span id="reward38">0</span>
-                <button id="add-reward38">+</button>
-            </td>
-            <td id="star38">0</td>
-        </tr>
-        <!-- Row 40 -->
-        <tr>
-            <td>40</td>
-            <td>Bách</td>
-            <td>
-                <button id="subtract-score39">-</button>
-                <span id="score39">0</span>
-                <button id="add-score39">+</button>
-            </td>
-            <td>
-                <button id="subtract-reward39">-</button>
-                <span id="reward39">0</span>
-                <button id="add-reward39">+</button>
-            </td>
-            <td id="star39">0</td>
-        </tr>
-    </table>
+	<table>
+		<tr>
+			<th>STT</th>
+			<th>Tên</th>
+			<th>Điểm tốt</th>
+			<th>Giải thưởng</th>
+			<th>Sao</th>
+		</tr>
+		<!-- Thay 8D bằng số thứ tự từ 1 đến 40 -->
+		<!-- Row 1 -->
+		<tr>
+			<td>1</td>
+			<td>Diệp An♀️</td>
+			<td>
+				<button id="subtract-score0">-</button>
+				<span id="score0">0</span>
+				<button id="add-score0">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward0">-</button>
+				<span id="reward0">0</span>
+				<button id="add-reward0">+</button>
+			</td>
+			<td id="star0">0</td>
+		</tr>
+		<!-- Row 2 -->
+		<tr>
+			<td>2</td>
+			<td>Hải An♀️</td>
+			<td>
+				<button id="subtract-score1">-</button>
+				<span id="score1">0</span>
+				<button id="add-score1">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward1">-</button>
+				<span id="reward1">0</span>
+				<button id="add-reward1">+</button>
+			</td>
+			<td id="star1">0</td>
+		</tr>
+		<!-- Row 3 -->
+		<tr>
+			<td>3</td>
+			<td>Tuệ Anh♀️</td>
+			<td>
+				<button id="subtract-score2">-</button>
+				<span id="score2">0</span>
+				<button id="add-score2">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward2">-</button>
+				<span id="reward2">0</span>
+				<button id="add-reward2">+</button>
+			</td>
+			<td id="star2">0</td>
+		</tr>
+		<!-- Row 4 -->
+		<tr>
+			<td>4</td>
+			<td>Vy Anh♀️</td>
+			<td>
+				<button id="subtract-score3">-</button>
+				<span id="score3">0</span>
+				<button id="add-score3">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward3">-</button>
+				<span id="reward3">0</span>
+				<button id="add-reward3">+</button>
+			</td>
+			<td id="star3">0</td>
+		</tr>
+		<!-- Row 5 -->
+		<tr>
+			<td>5</td>
+			<td>Tùng Anh♂️</td>
+			<td>
+				<button id="subtract-score4">-</button>
+				<span id="score4">0</span>
+				<button id="add-score4">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward4">-</button>
+				<span id="reward4">0</span>
+				<button id="add-reward4">+</button>
+			</td>
+			<td id="star4">0</td>
+		</tr>
+		<!-- Row 6 -->
+		<tr>
+			<td>6</td>
+			<td>Xuân Bách♂️</td>
+			<td>
+				<button id="subtract-score5">-</button>
+				<span id="score5">0</span>
+				<button id="add-score5">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward5">-</button>
+				<span id="reward5">0</span>
+				<button id="add-reward5">+</button>
+			</td>
+			<td id="star5">0</td>
+		</tr>
+		<!-- Row 7 -->
+		<tr>
+			<td>7</td>
+			<td>Gia Bách♂️</td>
+			<td>
+				<button id="subtract-score6">-</button>
+				<span id="score6">0</span>
+				<button id="add-score6">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward6">-</button>
+				<span id="reward6">0</span>
+				<button id="add-reward6">+</button>
+			</td>
+			<td id="star6">0</td>
+		</tr>
+		<!-- Row 8 -->
+		<tr>
+			<td>8</td>
+			<td>Anh Dũng♂️</td>
+			<td>
+				<button id="subtract-score7">-</button>
+				<span id="score7">0</span>
+				<button id="add-score7">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward7">-</button>
+				<span id="reward7">0</span>
+				<button id="add-reward7">+</button>
+			</td>
+			<td id="star7">0</td>
+		</tr>
+		<!-- Row 9 -->
+		<tr>
+			<td>9</td>
+			<td>Bảo Duy♂️</td>
+			<td>
+				<button id="subtract-score8">-</button>
+				<span id="score8">0</span>
+				<button id="add-score8">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward8">-</button>
+				<span id="reward8">0</span>
+				<button id="add-reward8">+</button>
+			</td>
+			<td id="star8">0</td>
+		</tr>
+		<!-- Row 10 -->
+		<tr>
+			<td>10</td>
+			<td>Thành Đạt♂️</td>
+			<td>
+				<button id="subtract-score9">-</button>
+				<span id="score9">0</span>
+				<button id="add-score9">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward9">-</button>
+				<span id="reward9">0</span>
+				<button id="add-reward9">+</button>
+			</td>
+			<td id="star9">0</td>
+		</tr>
+		<!-- Row 11 -->
+		<tr>
+			<td>11</td>
+			<td>♂️♀️</td>
+			<td>
+				<button id="subtract-score10">-</button>
+				<span id="score10">0</span>
+				<button id="add-score10">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward10">-</button>
+				<span id="reward10">0</span>
+				<button id="add-reward10">+</button>
+			</td>
+			<td id="star10">0</td>
+		</tr>
+		<!-- Row 12 -->
+		<tr>
+			<td>12</td>
+			<td>Bách</td>
+			<td>
+				<button id="subtract-score11">-</button>
+				<span id="score11">0</span>
+				<button id="add-score11">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward11">-</button>
+				<span id="reward11">0</span>
+				<button id="add-reward11">+</button>
+			</td>
+			<td id="star11">0</td>
+		</tr>
+		<!-- Row 13 -->
+		<tr>
+			<td>13</td>
+			<td>Bách</td>
+			<td>
+				<button id="subtract-score12">-</button>
+				<span id="score12">0</span>
+				<button id="add-score12">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward12">-</button>
+				<span id="reward12">0</span>
+				<button id="add-reward12">+</button>
+			</td>
+			<td id="star12">0</td>
+		</tr>
+		<!-- Row 14 -->
+		<tr>
+			<td>14</td>
+			<td>Bách</td>
+			<td>
+				<button id="subtract-score13">-</button>
+				<span id="score13">0</span>
+				<button id="add-score13">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward13">-</button>
+				<span id="reward13">0</span>
+				<button id="add-reward13">+</button>
+			</td>
+			<td id="star13">0</td>
+		</tr>
+		<!-- Row 15 -->
+		<tr>
+			<td>15</td>
+			<td>Bách</td>
+			<td>
+				<button id="subtract-score14">-</button>
+				<span id="score14">0</span>
+				<button id="add-score14">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward14">-</button>
+				<span id="reward14">0</span>
+				<button id="add-reward14">+</button>
+			</td>
+			<td id="star14">0</td>
+		</tr>
+		<!-- Row 16 -->
+		<tr>
+			<td>16</td>
+			<td>Bách</td>
+			<td>
+				<button id="subtract-score15">-</button>
+				<span id="score15">0</span>
+				<button id="add-score15">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward15">-</button>
+				<span id="reward15">0</span>
+				<button id="add-reward15">+</button>
+			</td>
+			<td id="star15">0</td>
+		</tr>
+		<!-- Row 17 -->
+		<tr>
+			<td>17</td>
+			<td>Bách</td>
+			<td>
+				<button id="subtract-score16">-</button>
+				<span id="score16">0</span>
+				<button id="add-score16">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward16">-</button>
+				<span id="reward16">0</span>
+				<button id="add-reward16">+</button>
+			</td>
+			<td id="star16">0</td>
+		</tr>
+		<!-- Row 18 -->
+		<tr>
+			<td>18</td>
+			<td>Bách</td>
+			<td>
+				<button id="subtract-score17">-</button>
+				<span id="score17">0</span>
+				<button id="add-score17">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward17">-</button>
+				<span id="reward17">0</span>
+				<button id="add-reward17">+</button>
+			</td>
+			<td id="star17">0</td>
+		</tr>
+		<!-- Row 19 -->
+		<tr>
+			<td>19</td>
+			<td>Bách</td>
+			<td>
+				<button id="subtract-score18">-</button>
+				<span id="score18">0</span>
+				<button id="add-score18">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward18">-</button>
+				<span id="reward18">0</span>
+				<button id="add-reward18">+</button>
+			</td>
+			<td id="star18">0</td>
+		</tr>
+		<!-- Row 20 -->
+		<tr>
+			<td>20</td>
+			<td>Bách</td>
+			<td>
+				<button id="subtract-score19">-</button>
+				<span id="score19">0</span>
+				<button id="add-score19">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward19">-</button>
+				<span id="reward19">0</span>
+				<button id="add-reward19">+</button>
+			</td>
+			<td id="star19">0</td>
+		</tr>
+		<!-- Row 21 -->
+		<tr>
+			<td>21</td>
+			<td>Bách</td>
+			<td>
+				<button id="subtract-score20">-</button>
+				<span id="score20">0</span>
+				<button id="add-score20">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward20">-</button>
+				<span id="reward20">0</span>
+				<button id="add-reward20">+</button>
+			</td>
+			<td id="star20">0</td>
+		</tr>
+		<!-- Row 22 -->
+		<tr>
+			<td>22</td>
+			<td>Bách</td>
+			<td>
+				<button id="subtract-score21">-</button>
+				<span id="score21">0</span>
+				<button id="add-score21">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward21">-</button>
+				<span id="reward21">0</span>
+				<button id="add-reward21">+</button>
+			</td>
+			<td id="star21">0</td>
+		</tr>
+		<!-- Row 23 -->
+		<tr>
+			<td>23</td>
+			<td>Bách</td>
+			<td>
+				<button id="subtract-score22">-</button>
+				<span id="score22">0</span>
+				<button id="add-score22">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward22">-</button>
+				<span id="reward22">0</span>
+				<button id="add-reward22">+</button>
+			</td>
+			<td id="star22">0</td>
+		</tr>
+		<!-- Row 24 -->
+		<tr>
+			<td>24</td>
+			<td>Bách</td>
+			<td>
+				<button id="subtract-score23">-</button>
+				<span id="score23">0</span>
+				<button id="add-score23">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward23">-</button>
+				<span id="reward23">0</span>
+				<button id="add-reward23">+</button>
+			</td>
+			<td id="star23">0</td>
+		</tr>
+		<!-- Row 25 -->
+		<tr>
+			<td>25</td>
+			<td>Bách</td>
+			<td>
+				<button id="subtract-score24">-</button>
+				<span id="score24">0</span>
+				<button id="add-score24">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward24">-</button>
+				<span id="reward24">0</span>
+				<button id="add-reward24">+</button>
+			</td>
+			<td id="star24">0</td>
+		</tr>
+		<!-- Row 26 -->
+		<tr>
+			<td>26</td>
+			<td>Bách</td>
+			<td>
+				<button id="subtract-score25">-</button>
+				<span id="score25">0</span>
+				<button id="add-score25">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward25">-</button>
+				<span id="reward25">0</span>
+				<button id="add-reward25">+</button>
+			</td>
+			<td id="star25">0</td>
+		</tr>
+		<!-- Row 27 -->
+		<tr>
+			<td>27</td>
+			<td>Bách</td>
+			<td>
+				<button id="subtract-score26">-</button>
+				<span id="score26">0</span>
+				<button id="add-score26">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward26">-</button>
+				<span id="reward26">0</span>
+				<button id="add-reward26">+</button>
+			</td>
+			<td id="star26">0</td>
+		</tr>
+		<!-- Row 28 -->
+		<tr>
+			<td>28</td>
+			<td>Bách</td>
+			<td>
+				<button id="subtract-score27">-</button>
+				<span id="score27">0</span>
+				<button id="add-score27">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward27">-</button>
+				<span id="reward27">0</span>
+				<button id="add-reward27">+</button>
+			</td>
+			<td id="star27">0</td>
+		</tr>
+		<!-- Row 29 -->
+		<tr>
+			<td>29</td>
+			<td>Bách</td>
+			<td>
+				<button id="subtract-score28">-</button>
+				<span id="score28">0</span>
+				<button id="add-score28">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward28">-</button>
+				<span id="reward28">0</span>
+				<button id="add-reward28">+</button>
+			</td>
+			<td id="star28">0</td>
+		</tr>
+		<!-- Row 30 -->
+		<tr>
+			<td>30</td>
+			<td>Bách</td>
+			<td>
+				<button id="subtract-score29">-</button>
+				<span id="score29">0</span>
+				<button id="add-score29">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward29">-</button>
+				<span id="reward29">0</span>
+				<button id="add-reward29">+</button>
+			</td>
+			<td id="star29">0</td>
+		</tr>
+		<!-- Row 31 -->
+		<tr>
+			<td>31</td>
+			<td>Bách</td>
+			<td>
+				<button id="subtract-score30">-</button>
+				<span id="score30">0</span>
+				<button id="add-score30">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward30">-</button>
+				<span id="reward30">0</span>
+				<button id="add-reward30">+</button>
+			</td>
+			<td id="star30">0</td>
+		</tr>
+		<!-- Row 32 -->
+		<tr>
+			<td>32</td>
+			<td>Bách</td>
+			<td>
+				<button id="subtract-score31">-</button>
+				<span id="score31">0</span>
+				<button id="add-score31">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward31">-</button>
+				<span id="reward31">0</span>
+				<button id="add-reward31">+</button>
+			</td>
+			<td id="star31">0</td>
+		</tr>
+		<!-- Row 33 -->
+		<tr>
+			<td>33</td>
+			<td>Bách</td>
+			<td>
+				<button id="subtract-score32">-</button>
+				<span id="score32">0</span>
+				<button id="add-score32">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward32">-</button>
+				<span id="reward32">0</span>
+				<button id="add-reward32">+</button>
+			</td>
+			<td id="star32">0</td>
+		</tr>
+		<!-- Row 34 -->
+		<tr>
+			<td>34</td>
+			<td>Bách</td>
+			<td>
+				<button id="subtract-score33">-</button>
+				<span id="score33">0</span>
+				<button id="add-score33">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward33">-</button>
+				<span id="reward33">0</span>
+				<button id="add-reward33">+</button>
+			</td>
+			<td id="star33">0</td>
+		</tr>
+		<!-- Row 35 -->
+		<tr>
+			<td>35</td>
+			<td>Bách</td>
+			<td>
+				<button id="subtract-score34">-</button>
+				<span id="score34">0</span>
+				<button id="add-score34">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward34">-</button>
+				<span id="reward34">0</span>
+				<button id="add-reward34">+</button>
+			</td>
+			<td id="star34">0</td>
+		</tr>
+		<!-- Row 36 -->
+		<tr>
+			<td>36</td>
+			<td>Bách</td>
+			<td>
+				<button id="subtract-score35">-</button>
+				<span id="score35">0</span>
+				<button id="add-score35">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward35">-</button>
+				<span id="reward35">0</span>
+				<button id="add-reward35">+</button>
+			</td>
+			<td id="star35">0</td>
+		</tr>
+		<!-- Row 37 -->
+		<tr>
+			<td>37</td>
+			<td>Bách</td>
+			<td>
+				<button id="subtract-score36">-</button>
+				<span id="score36">0</span>
+				<button id="add-score36">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward36">-</button>
+				<span id="reward36">0</span>
+				<button id="add-reward36">+</button>
+			</td>
+			<td id="star36">0</td>
+		</tr>
+		<!-- Row 38 -->
+		<tr>
+			<td>38</td>
+			<td>Bách</td>
+			<td>
+				<button id="subtract-score37">-</button>
+				<span id="score37">0</span>
+				<button id="add-score37">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward37">-</button>
+				<span id="reward37">0</span>
+				<button id="add-reward37">+</button>
+			</td>
+			<td id="star37">0</td>
+		</tr>
+		<!-- Row 39 -->
+		<tr>
+			<td>39</td>
+			<td>Bách</td>
+			<td>
+				<button id="subtract-score38">-</button>
+				<span id="score38">0</span>
+				<button id="add-score38">+</button>
+			</td>
+			<td>
+				<button id="subtract-reward38">-</button>
+				<span id="reward38">0</span>
+				<button id="add-reward38">+</button>
+			</td>
+			<td id="star38">0</td>
+		</tr>
+	</table>
 
 </body>
 

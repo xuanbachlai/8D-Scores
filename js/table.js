@@ -1,6 +1,6 @@
 // Function to save data to localStorage
 function saveData() {
-    for (let i = 0; i < 40; i++) {
+    for (let i = 0; i < 39; i++) {
         localStorage.setItem(`score${i}`, document.getElementById(`score${i}`).textContent);
         localStorage.setItem(`reward${i}`, document.getElementById(`reward${i}`).textContent);
     }
@@ -8,7 +8,7 @@ function saveData() {
 
 // Function to load data from localStorage
 function loadData() {
-    for (let i = 0; i < 40; i++) {
+    for (let i = 0; i < 39; i++) {
         let score = localStorage.getItem(`score${i}`) || '0';
         let reward = localStorage.getItem(`reward${i}`) || '0';
         document.getElementById(`score${i}`).textContent = score;
@@ -29,7 +29,7 @@ function updateStars(index) {
 document.addEventListener('DOMContentLoaded', (event) => {
     loadData();
 
-    for (let i = 0; i < 40; i++) {
+    for (let i = 0; i < 39; i++) {
         document.getElementById(`add-score${i}`).addEventListener('click', () => {
             let scoreElem = document.getElementById(`score${i}`);
             scoreElem.textContent = parseInt(scoreElem.textContent) + 1;

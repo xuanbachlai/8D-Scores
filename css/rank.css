@@ -1,0 +1,116 @@
+.rank-board {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    border-radius: 50px;
+    left: 500px;
+    top: 100px;
+}
+
+#rank-image {
+    position: relative;
+    width: 308px;
+    height: 164px;
+    background-image: url(../res/rank.png);
+    transform: scaleX(1.5) scaleY(1.5);
+    left: 50px;
+    top: 100px;
+}
+
+.switch {
+    font-size: 1rem;
+    position: relative;
+    display: inline-block;
+    width: 4em;
+    height: 2em;
+    top: -200px;
+    left: 270px;
+}
+   
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+   
+.slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background-color: #eee;
+    transition: 0.4s;
+    border-radius: 0.5em;
+    box-shadow: 0 0.2em #dfd9d9;
+}
+   
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.5em;
+    width: 1.4em;
+    border-radius: 0.3em;
+    left: 0.3em;
+    bottom: 0.7em;
+    background-color: lightsalmon;
+    transition: 0.4s;
+    box-shadow: 0 0.4em #bcb4b4;
+}
+   
+.slider:hover::before {
+    box-shadow: 0 0.2em #bcb4b4;
+    bottom: 0.5em;
+}
+   
+input:checked+.slider:before {
+    transform: translateX(2em);
+    background: lightgreen;
+}
+
+.ViewPage2 {
+    display: block;
+}
+
+@media (max-width: 414px){
+	.rank-board {
+        position: relative;
+        width: 100%;
+        height: 700px;
+        background-color: whitesmoke;
+        border-radius: 50px;
+        left: 5px;
+    }
+
+    p[id^="ViewPage2-Top"] {
+        position: relative;
+        color: rgb(48, 164, 102);
+        font-size: 50px;
+        font: bold;
+    }
+
+    #ViewPage2-Top1 {
+        top: 100px;
+        left: 40px;
+    }
+
+    #ViewPage2-Top2 {
+        top: 100px;
+        left: 40px;
+    }
+
+    #ViewPage2-Top3 {
+        top: 100px;
+        left: 40px;
+    }
+
+    .switch {
+        font-size: 1rem;
+        position: relative;
+        display: inline-block;
+        width: 4em;
+        height: 2em;
+        top: -350px;
+        left: 180px;
+    }
+
+}

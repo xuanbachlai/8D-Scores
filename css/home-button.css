@@ -37,7 +37,7 @@ button:hover,
 	top: 260px;
 }
 
-@media only screen and (max-width: 414px){
+@media (max-width: 414px){
 	#btn {
 		left: 38%;
 		top: 400px;
