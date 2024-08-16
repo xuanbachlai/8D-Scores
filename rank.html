@@ -6,30 +6,40 @@
 	<title>8D - Xếp hạng🏆</title>
 	<link rel="stylesheet" href="css/generals.css">
     <link rel="stylesheet" href="css/rank.css">
+    <link rel="stylesheet" href="css/navigation.css">
 	<link rel="icon" href="res/meow.png">
 </head>
 <body>
-
+    <div class="support-navigation">
+		<button id="button" onclick="document.location = 'index.html'">
+			<span class="text">Trang chủ</span>
+			<span>🏠</span>
+		</button>
+        <button id="button" onclick="document.location = 'scorage.html'">
+			<span class="text">Tích điểm</span>
+			<span>🎁</span>
+		</button>
+	</div>
     <div class="rank-board">
         <div class="ViewPage2">
             <div id="rank-image"></div>
-            <p id="page2-Top1">TOP 1: Trúc</p>
-            <p id="page2-Top2">TOP 2: Mèo</p>
-            <p id="page2-Top3">TOP 3: Mew</p>
+            <p id="page2-Top1">Nhất: <span id="page2-top1-name">Trúc</span></p>
+            <p id="page2-Top2">Nhì: <span id="page2-top2-name">Vy Anh</span></p>
+            <p id="page2-Top3">Ba: <span id="page2-top3-name">Ngọc Huyền</span></p>
         </div>
         <div class="ViewPage1">
             <table id="table">
                 <tr>
-                    <td>Trúc</td>
-                    <td id="page1-score">0</td>
+                    <td id="page1-top1-name">Trúc</td>
+                    <td id="page1-top1-score" class="page1-score">0</td>
                 </tr>
                 <tr>
-                    <td>Meow</td>
-                    <td id="page1-score">0</td>
+                    <td id="page1-top2-name">Vy Anh</td>
+                    <td id="page1-top2-score" class="page1-score">0</td>
                 </tr>
                 <tr>
-                    <td>Mều chân ngắn</td>
-                    <td id="page1-score">0</td>
+                    <td id="page1-top3-name">Ngọc Huyền</td>
+                    <td id="page1-top3-score" class="page1-score">0</td>
                 </tr>
             </table>
         </div>
@@ -43,5 +53,7 @@
 </body>
 
 <script src="js/view_page.js"></script>
+<script src="js/rank.js"></script>
+<script src="js/nav.js"></script>
 
 </html>

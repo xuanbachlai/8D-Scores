@@ -6,10 +6,20 @@
 	<title>8D - Tích điểm🎁</title>
 	<link rel="stylesheet" href="css/generals.css">
 	<link rel="stylesheet" href="css/table.css">
+	<link rel="stylesheet" href="css/navigation.css">
 	<link rel="icon" href="res/meow.png">
 </head>
 <body>
-
+	<div class="support-navigation">
+		<button id="button" onclick="document.location = 'index.html'">
+			<span class="text">Trang chủ</span>
+			<span>🏠</span>
+		</button>
+        <button id="button" onclick="document.location = 'rank.html'">
+			<span class="text">Xếp hạng</span>
+			<span>🏆</span>
+		</button>
+	</div>
 	<table>
 		<tr>
 			<th>STT</th>
@@ -22,7 +32,7 @@
 		<!-- Row 1 -->
 		<tr>
 			<td>1</td>
-			<td>Diệp An♀️</td>
+			<td id="name0">Diệp An♀️</td>
 			<td>
 				<button id="subtract-score0">-</button>
 				<span id="score0">0</span>
@@ -38,7 +48,7 @@
 		<!-- Row 2 -->
 		<tr>
 			<td>2</td>
-			<td>Hải An♀️</td>
+			<td id="name1">Hải An♀️</td>
 			<td>
 				<button id="subtract-score1">-</button>
 				<span id="score1">0</span>
@@ -54,7 +64,7 @@
 		<!-- Row 3 -->
 		<tr>
 			<td>3</td>
-			<td>Tuệ Anh♀️</td>
+			<td id="name2">Tuệ Anh♀️</td>
 			<td>
 				<button id="subtract-score2">-</button>
 				<span id="score2">0</span>
@@ -70,7 +80,7 @@
 		<!-- Row 4 -->
 		<tr>
 			<td>4</td>
-			<td>Vy Anh♀️</td>
+			<td id="name3">Vy Anh♀️</td>
 			<td>
 				<button id="subtract-score3">-</button>
 				<span id="score3">0</span>
@@ -86,7 +96,7 @@
 		<!-- Row 5 -->
 		<tr>
 			<td>5</td>
-			<td>Tùng Anh♂️</td>
+			<td id="name4">Tùng Anh♂️</td>
 			<td>
 				<button id="subtract-score4">-</button>
 				<span id="score4">0</span>
@@ -102,7 +112,7 @@
 		<!-- Row 6 -->
 		<tr>
 			<td>6</td>
-			<td>Xuân Bách♂️</td>
+			<td id="name5">Xuân Bách♂️</td>
 			<td>
 				<button id="subtract-score5">-</button>
 				<span id="score5">0</span>
@@ -118,7 +128,7 @@
 		<!-- Row 7 -->
 		<tr>
 			<td>7</td>
-			<td>Gia Bách♂️</td>
+			<td id="name6">Gia Bách♂️</td>
 			<td>
 				<button id="subtract-score6">-</button>
 				<span id="score6">0</span>
@@ -134,7 +144,7 @@
 		<!-- Row 8 -->
 		<tr>
 			<td>8</td>
-			<td>Anh Dũng♂️</td>
+			<td id="name7">Anh Dũng♂️</td>
 			<td>
 				<button id="subtract-score7">-</button>
 				<span id="score7">0</span>
@@ -150,7 +160,7 @@
 		<!-- Row 9 -->
 		<tr>
 			<td>9</td>
-			<td>Bảo Duy♂️</td>
+			<td id="name8">Bảo Duy♂️</td>
 			<td>
 				<button id="subtract-score8">-</button>
 				<span id="score8">0</span>
@@ -166,7 +176,7 @@
 		<!-- Row 10 -->
 		<tr>
 			<td>10</td>
-			<td>Thành Đạt♂️</td>
+			<td id="name9">Thành Đạt♂️</td>
 			<td>
 				<button id="subtract-score9">-</button>
 				<span id="score9">0</span>
@@ -182,7 +192,7 @@
 		<!-- Row 11 -->
 		<tr>
 			<td>11</td>
-			<td>♂️♀️</td>
+			<td id="name10">Trí Đức♂️</td>
 			<td>
 				<button id="subtract-score10">-</button>
 				<span id="score10">0</span>
@@ -198,7 +208,7 @@
 		<!-- Row 12 -->
 		<tr>
 			<td>12</td>
-			<td>Bách</td>
+			<td id="name11">Ngân Hà♀️</td>
 			<td>
 				<button id="subtract-score11">-</button>
 				<span id="score11">0</span>
@@ -214,7 +224,7 @@
 		<!-- Row 13 -->
 		<tr>
 			<td>13</td>
-			<td>Bách</td>
+			<td id="name12">Bảo Hân♀️</td>
 			<td>
 				<button id="subtract-score12">-</button>
 				<span id="score12">0</span>
@@ -230,7 +240,7 @@
 		<!-- Row 14 -->
 		<tr>
 			<td>14</td>
-			<td>Bách</td>
+			<td id="name13">Thế Hoàng♂️</td>
 			<td>
 				<button id="subtract-score13">-</button>
 				<span id="score13">0</span>
@@ -246,7 +256,7 @@
 		<!-- Row 15 -->
 		<tr>
 			<td>15</td>
-			<td>Bách</td>
+			<td id="name14">Quốc Huy♂️</td>
 			<td>
 				<button id="subtract-score14">-</button>
 				<span id="score14">0</span>
@@ -262,7 +272,7 @@
 		<!-- Row 16 -->
 		<tr>
 			<td>16</td>
-			<td>Bách</td>
+			<td id="name15">Ngọc Huyền♀️</td>
 			<td>
 				<button id="subtract-score15">-</button>
 				<span id="score15">0</span>
@@ -278,7 +288,7 @@
 		<!-- Row 17 -->
 		<tr>
 			<td>17</td>
-			<td>Bách</td>
+			<td id="name16">Mai Hương♀️</td>
 			<td>
 				<button id="subtract-score16">-</button>
 				<span id="score16">0</span>
@@ -294,7 +304,7 @@
 		<!-- Row 18 -->
 		<tr>
 			<td>18</td>
-			<td>Bách</td>
+			<td id="name17">Minh Hiếu♂️</td>
 			<td>
 				<button id="subtract-score17">-</button>
 				<span id="score17">0</span>
@@ -310,7 +320,7 @@
 		<!-- Row 19 -->
 		<tr>
 			<td>19</td>
-			<td>Bách</td>
+			<td id="name18">Gia Khoa♂️</td>
 			<td>
 				<button id="subtract-score18">-</button>
 				<span id="score18">0</span>
@@ -326,7 +336,7 @@
 		<!-- Row 20 -->
 		<tr>
 			<td>20</td>
-			<td>Bách</td>
+			<td id="name19">Gia Linh♀️</td>
 			<td>
 				<button id="subtract-score19">-</button>
 				<span id="score19">0</span>
@@ -342,7 +352,7 @@
 		<!-- Row 21 -->
 		<tr>
 			<td>21</td>
-			<td>Bách</td>
+			<td id="name20">Duy Long♂️</td>
 			<td>
 				<button id="subtract-score20">-</button>
 				<span id="score20">0</span>
@@ -358,7 +368,7 @@
 		<!-- Row 22 -->
 		<tr>
 			<td>22</td>
-			<td>Bách</td>
+			<td id="name21">Ngọc Ly♀️</td>
 			<td>
 				<button id="subtract-score21">-</button>
 				<span id="score21">0</span>
@@ -374,7 +384,7 @@
 		<!-- Row 23 -->
 		<tr>
 			<td>23</td>
-			<td>Bách</td>
+			<td id="name22">Anh Minh♂️</td>
 			<td>
 				<button id="subtract-score22">-</button>
 				<span id="score22">0</span>
@@ -390,7 +400,7 @@
 		<!-- Row 24 -->
 		<tr>
 			<td>24</td>
-			<td>Bách</td>
+			<td id="name23">Quang Minh♀️</td>
 			<td>
 				<button id="subtract-score23">-</button>
 				<span id="score23">0</span>
@@ -406,7 +416,7 @@
 		<!-- Row 25 -->
 		<tr>
 			<td>25</td>
-			<td>Bách</td>
+			<td id="name24">Bích Ngọc♀️</td>
 			<td>
 				<button id="subtract-score24">-</button>
 				<span id="score24">0</span>
@@ -422,7 +432,7 @@
 		<!-- Row 26 -->
 		<tr>
 			<td>26</td>
-			<td>Bách</td>
+			<td id="name25">Hoàng Nguyên♂️</td>
 			<td>
 				<button id="subtract-score25">-</button>
 				<span id="score25">0</span>
@@ -438,7 +448,7 @@
 		<!-- Row 27 -->
 		<tr>
 			<td>27</td>
-			<td>Bách</td>
+			<td id="name26">Thảo Nhi♀️</td>
 			<td>
 				<button id="subtract-score26">-</button>
 				<span id="score26">0</span>
@@ -454,7 +464,7 @@
 		<!-- Row 28 -->
 		<tr>
 			<td>28</td>
-			<td>Bách</td>
+			<td id="name27">Công Phát♂️</td>
 			<td>
 				<button id="subtract-score27">-</button>
 				<span id="score27">0</span>
@@ -470,7 +480,7 @@
 		<!-- Row 29 -->
 		<tr>
 			<td>29</td>
-			<td>Bách</td>
+			<td id="name28">Thiên Phúc♂️</td>
 			<td>
 				<button id="subtract-score28">-</button>
 				<span id="score28">0</span>
@@ -486,7 +496,7 @@
 		<!-- Row 30 -->
 		<tr>
 			<td>30</td>
-			<td>Bách</td>
+			<td id="name29">Thanh Thảo♀️</td>
 			<td>
 				<button id="subtract-score29">-</button>
 				<span id="score29">0</span>
@@ -502,7 +512,7 @@
 		<!-- Row 31 -->
 		<tr>
 			<td>31</td>
-			<td>Bách</td>
+			<td id="name30">Đức Thinh♂️</td>
 			<td>
 				<button id="subtract-score30">-</button>
 				<span id="score30">0</span>
@@ -518,7 +528,7 @@
 		<!-- Row 32 -->
 		<tr>
 			<td>32</td>
-			<td>Bách</td>
+			<td id="name31">Ngọc Thuận</td>
 			<td>
 				<button id="subtract-score31">-</button>
 				<span id="score31">0</span>
@@ -534,7 +544,7 @@
 		<!-- Row 33 -->
 		<tr>
 			<td>33</td>
-			<td>Bách</td>
+			<td id="name32">Hoài Thư♀️</td>
 			<td>
 				<button id="subtract-score32">-</button>
 				<span id="score32">0</span>
@@ -550,7 +560,7 @@
 		<!-- Row 34 -->
 		<tr>
 			<td>34</td>
-			<td>Bách</td>
+			<td id="name33">Thanh Trúc♀️</td>
 			<td>
 				<button id="subtract-score33">-</button>
 				<span id="score33">0</span>
@@ -566,7 +576,7 @@
 		<!-- Row 35 -->
 		<tr>
 			<td>35</td>
-			<td>Bách</td>
+			<td id="name34">Thanh Tú♀️</td>
 			<td>
 				<button id="subtract-score34">-</button>
 				<span id="score34">0</span>
@@ -582,7 +592,7 @@
 		<!-- Row 36 -->
 		<tr>
 			<td>36</td>
-			<td>Bách</td>
+			<td id="name35">Minh Tuấn♂️</td>
 			<td>
 				<button id="subtract-score35">-</button>
 				<span id="score35">0</span>
@@ -598,7 +608,7 @@
 		<!-- Row 37 -->
 		<tr>
 			<td>37</td>
-			<td>Bách</td>
+			<td id="name36">Trường Giang♂️</td>
 			<td>
 				<button id="subtract-score36">-</button>
 				<span id="score36">0</span>
@@ -614,7 +624,7 @@
 		<!-- Row 38 -->
 		<tr>
 			<td>38</td>
-			<td>Bách</td>
+			<td id="name37">Thái Vy♀️</td>
 			<td>
 				<button id="subtract-score37">-</button>
 				<span id="score37">0</span>
@@ -627,27 +637,13 @@
 			</td>
 			<td id="star37">0</td>
 		</tr>
-		<!-- Row 39 -->
-		<tr>
-			<td>39</td>
-			<td>Bách</td>
-			<td>
-				<button id="subtract-score38">-</button>
-				<span id="score38">0</span>
-				<button id="add-score38">+</button>
-			</td>
-			<td>
-				<button id="subtract-reward38">-</button>
-				<span id="reward38">0</span>
-				<button id="add-reward38">+</button>
-			</td>
-			<td id="star38">0</td>
-		</tr>
 	</table>
 
 </body>
 
 <script src="js/table.js"></script>
 <script src="js/stt_replace.js"></script>
+<script src="js/score.js" defer></script>
+<script src="js/nav.js"></script>
 
 </html>
